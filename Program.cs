@@ -24,7 +24,7 @@ string PrintArray(int[] array)
 
 //Создаем новый массив 
 
-int[] test = newArray(6);
+int[] firstArray = newArray(6);
 
 //Считаем число четных элементов массива
 
@@ -39,7 +39,7 @@ int countChetNumbers(int[] array)
 }
 
 //Присваеваем переменной число четных элементов для создания нового массива
-int count = countChetNumbers(test);
+int count = countChetNumbers(firstArray);
 
 //Заполняем второй массив четными элементами первого
 int[] SecondArray(int[] array)
@@ -58,10 +58,10 @@ int[] SecondArray(int[] array)
 }
 
 //Печатаем первый массив
-Console.WriteLine("[" + PrintArray(test) + "]");
+Console.WriteLine("[" + PrintArray(firstArray) + "]");
 
 //Печатаем число четных лементов в массиве
 Console.WriteLine("Число четных элементов в массиве - " + count);
 
 //Печатаем новый массив
-Console.WriteLine("[" + PrintArray(SecondArray(test)) + "]");
+Console.WriteLine("[" + PrintArray(SecondArray(firstArray)) + "]");
