@@ -1,11 +1,11 @@
 ﻿// Метод для создания массива с заданным числом элементов
 
-int[] newArray(int count)
+int[] newArray(int count, int on, int off)
 {
     int[] array = new int[count];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(1, 9);
+        array[i] = new Random().Next(on, off);
     }
     return array;
 }
@@ -24,7 +24,7 @@ string PrintArray(int[] array)
 
 //Создаем новый массив 
 
-int[] firstArray = newArray(6);
+int[] firstArray = newArray(6, 1, 9);
 
 //Считаем число четных элементов массива
 
